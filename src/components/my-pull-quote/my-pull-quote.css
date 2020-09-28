@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  padding: 1.5rem 3rem 1rem;
+  width: 80%;
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:host:before {
+  content: '\201C';
+  color: #aaaaaa;
+  font-size: 72px;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.5rem;
+}
+
+:host .content {
+  font-style: italic;
+  margin-top: -1rem;
+}
+
+:host .content:first-of-type(p) {
+  color: red;
+}
